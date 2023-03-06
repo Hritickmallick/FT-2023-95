@@ -776,6 +776,7 @@
                     z-index: 2;
                     top: 70px;
                     -webkit-text-stroke-width: 1px;
+                    text-transform: capitalize;
 
                     @include tablet {
                         width: 100%;
@@ -860,6 +861,7 @@
                     position: absolute;
                     top: 75px;
                     -webkit-text-stroke-width: 1px;
+                    text-transform: capitalize;
 
                     @include tablet {
                         font-size: 25px;
@@ -1157,6 +1159,8 @@
                     @include mobile{
                         right: -10px;
                     }
+
+                    @include small
                 }
 
                 .image-box-3 {
