@@ -787,7 +787,7 @@
             }
 
             .description-content {
-                width: 60%;
+                width: 90%;
                 padding-bottom: 20px;
                 padding-top: 30px;
                 line-height: 1.5;
@@ -803,6 +803,8 @@
                 background-color: #e6818151;
                 display: inline-block;
                 border-radius: 8px;
+                transition: all 0.5s;
+
 
                 p {
                     display: inline-block;
@@ -820,6 +822,20 @@
                 }
 
             }
+
+            .description-link:hover{
+                background-color: $btn-color;
+                transition: all 0.5s;
+
+            }
+
+            .description-link:hover p{
+                color: $text-color-2;
+            }
+            
+            .description-link:hover a{
+                background-color: $text-color-2;
+            color: $btn-color;            }
 
         }
 
@@ -861,7 +877,7 @@
                     position: absolute;
                     top: 75px;
                     -webkit-text-stroke-width: 1px;
-                    text-transform: capitalize;
+                   text-transform: capitalize;
 
                     @include tablet {
                         font-size: 25px;
@@ -893,6 +909,7 @@
                 background-color: #e6818151;
                 display: inline-block;
                 border-radius: 8px;
+                transition: all 0.5s;
 
                 p {
                     display: inline-block;
@@ -910,6 +927,21 @@
                 }
 
             }
+
+
+            .description-link:hover{
+                background-color: $btn-color;
+                transition: all 0.5s;
+
+            }
+
+            .description-link:hover p{
+                color: $text-color-2;
+            }
+            
+            .description-link:hover a{
+                background-color: $text-color-2;
+            color: $btn-color;            }
 
 
         }
@@ -978,6 +1010,7 @@
         font-size: 38px;
         width: 50%;
         margin: 0 auto;
+        text-transform: capitalize;
 
         @include tablet {
             font-size: 30px;
@@ -1097,6 +1130,8 @@
                 background-color: #f6969673;
                 display: inline-block;
                 border-radius: 8px;
+                transition: all 0.5s;
+
 
                 a {
                     color: $btn-color;
@@ -1109,6 +1144,21 @@
                         color: $text-color-2;
                     }
                 }
+            }
+
+            .registration-link:hover{
+                background-color: $btn-color;
+                transition: all 0.5s;
+
+            }
+
+            .registration-link:hover a{
+                color: $text-color-2;
+            }
+
+            .registration-link:hover i{
+                color: $btn-color;
+                background-color: $text-color-2;
             }
 
         }
@@ -1160,7 +1210,6 @@
                         right: -10px;
                     }
 
-                    @include small
                 }
 
                 .image-box-3 {
@@ -1237,6 +1286,15 @@
                 border-radius: 5px;
                 color: $btn-color;
                 margin: 0px 2px;
+                transition: all 0.5s;
+
+            }
+
+            a:hover{
+                background-color: $btn-color;
+                color: $text-color-2;
+                transition: all 0.5s;
+
             }
         }
     }
@@ -1286,6 +1344,14 @@
 
                     a {
                         color: $text-color;
+                        transition: all 0.5s;
+
+                    }
+
+                    a:hover{
+                        color: $btn-color;
+                        transition: all 0.5s;
+
                     }
                 }
             }
