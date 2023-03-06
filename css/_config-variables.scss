@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 400;
+    color: $text-color;
+    overflow-x: hidden;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+@mixin flex-center($direction){
+    display: flex;
+    align-items: center;
+    flex-direction: $direction;
+}
+
