@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -20,6 +21,65 @@ body {
 
 a {
   text-decoration: none;
+}
+
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-500px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slide-in-right {
+  from {
+    transform: translateX(500px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slide-up {
+  from {
+    transform: translateY(-500px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes slide-down {
+  from {
+    transform: translateY(500px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.left-slide {
+  animation: slide-in-left 3s ease-in-out;
+  animation-duration: 3s;
+}
+
+.right-slide {
+  animation: slide-in-right 3s ease-in-out;
+  animation-duration: 3s;
+}
+
+.down-slide {
+  animation: slide-down 3s ease-in-out;
+  animation-duration: 3s;
+}
+
+.up-slide {
+  animation: slide-up 3s ease-in-out;
+  animation-duration: 3s;
+}
+
+.infinite-count {
+  animation-iteration-count: infinite;
+  animation-delay: 3s;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
 }
 
 .section-header-banner {
@@ -173,6 +233,9 @@ a {
     text-align: center;
   }
 }
+.section-header-banner .banner .banner-box .banner-box-col-1 .banner-link {
+  padding-bottom: 40px;
+}
 .section-header-banner .banner .banner-box .banner-box-col-1 .banner-link a {
   display: inline-block;
   padding: 18px 35px;
@@ -185,6 +248,16 @@ a {
   background-color: #fff;
   color: #ff5e00;
   transition: all 1s;
+}
+.section-header-banner .banner .banner-box .banner-box-col-1 .banner-scroll-link {
+  margin-top: 35px;
+}
+.section-header-banner .banner .banner-box .banner-box-col-1 .banner-scroll-link a {
+  padding: 37px 20px;
+  background-color: #ff5e00;
+  border-radius: 50%;
+  display: inline-block;
+  color: #fff;
 }
 .section-header-banner .banner .banner-box .banner-box-col-2 {
   width: 60%;
@@ -894,6 +967,8 @@ a {
 .section-description .description-box .description-box-row-2 .description-link:hover a {
   background-color: #fff;
   color: #ff5e00;
+  transition: 0.2s ease-in-out;
+  margin-left: 35px;
 }
 .section-description .description-box .description-box-row-2 .description-link p {
   display: inline-block;
@@ -907,6 +982,7 @@ a {
   padding: 8px 12px;
   color: #fff;
   border-radius: 5px;
+  transition: 0.2s ease-in-out;
 }
 .section-description .description-box-2 {
   display: flex;
@@ -1005,11 +1081,11 @@ a {
   background-color: rgba(230, 129, 129, 0.3176470588);
   display: inline-block;
   border-radius: 8px;
-  transition: all 0.5s;
+  transition: all 0.2s;
 }
 .section-description .description-box-2 .description-box-row-3 .description-link:hover {
   background-color: #ff5e00;
-  transition: all 0.5s;
+  transition: all 0.2s;
 }
 .section-description .description-box-2 .description-box-row-3 .description-link:hover p {
   color: #fff;
@@ -1017,6 +1093,8 @@ a {
 .section-description .description-box-2 .description-box-row-3 .description-link:hover a {
   background-color: #fff;
   color: #ff5e00;
+  transition: 0.2s ease-in-out;
+  margin-left: 40px;
 }
 .section-description .description-box-2 .description-box-row-3 .description-link p {
   display: inline-block;
@@ -1030,6 +1108,7 @@ a {
   padding: 8px 12px;
   color: #fff;
   border-radius: 5px;
+  transition: 0.2s ease-in-out;
 }
 .section-description .description-box-2 .description-box-row-4 {
   width: 60%;
@@ -1228,11 +1307,11 @@ a {
   background-color: rgba(246, 150, 150, 0.4509803922);
   display: inline-block;
   border-radius: 8px;
-  transition: all 0.5s;
+  transition: 0.2s ease-in-out;
 }
 .section-registration .registration-box .registration-box-row .registration-link:hover {
   background-color: #ff5e00;
-  transition: all 0.5s;
+  transition: 0.2s ease-in-out;
 }
 .section-registration .registration-box .registration-box-row .registration-link:hover a {
   color: #fff;
@@ -1240,6 +1319,8 @@ a {
 .section-registration .registration-box .registration-box-row .registration-link:hover i {
   color: #ff5e00;
   background-color: #fff;
+  margin-left: 45px;
+  transition: 0.2s ease-in-out;
 }
 @media screen and (max-width: 1200px) {
   .section-registration .registration-box .registration-box-row .registration-link {
@@ -1255,6 +1336,7 @@ a {
   margin-left: 20px;
   border-radius: 5px;
   color: #fff;
+  transition: 0.2s ease-in-out;
 }
 .section-registration .registration-box .registration-box-row .image-wrapper {
   display: flex;

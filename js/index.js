@@ -71,3 +71,55 @@ $(document).ready(function(){
         ]
       });
 })
+
+$(document).ready(function(){
+  $(".description-img-1").waypoint(function(){
+    $(".description-img-1").addClass("left-slide")
+  }, {offset:"30%"})
+})
+
+$(document).ready(function(){
+  $(".description-overlay-img").waypoint(function(){
+    $(".description-overlay-img").addClass("down-slide")
+  }, {offset:"100%"})
+})
+
+$(document).ready(function(){
+  $(".description-img-2").waypoint(function(){
+    $(".description-img-2").addClass("right-slide")
+  }, {offset:"30%"})
+})
+
+$(document).ready(function(){
+  $(".description-overlay-img-2").waypoint(function(){
+    $(".description-overlay-img-2").addClass("left-slide")
+  }, {offset:"100%"})
+})
+
+$(document).ready(function(){
+  $(".description-overlay").waypoint(function(){
+    $(".description-overlay").addClass("down-slide")
+  }, {offset:"100%"})
+})
+
+$(document).ready(function(){
+  $(".image-box-1").waypoint(function(){
+    $(".image-box-1").addClass("left-slide")
+  }, {offset:"50%"})
+})
+
+$(document).ready(function(){
+  $(".image-box-2").waypoint(function(){
+    $(".image-box-2").addClass("right-slide")
+  }, {offset:"50%"})
+})
+$(document).ready(function(){
+  $(".image-box-3").waypoint(function(){
+    $(".image-box-3").addClass("up-slide")
+  }, {offset:"70%"})
+})
+$(document).ready(function(){
+  $(".image-box-4").waypoint(function(){
+    $(".image-box-4").addClass("down-slide")
+  }, {offset:"70%"})
+})
