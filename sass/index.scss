@@ -1,5 +1,4 @@
-@import 'config-variables';
-@import 'media-queries';
+@import 'partial files/partial-files';
 
 .section-header-banner {
     background-color: $bckgrnd-color;
@@ -113,18 +112,18 @@
                 }
 
                 .banner-header {
-                    font-size: 25px;
+                    font-size: $font-size-25;
                     line-height: 1.3;
                     padding-bottom: 30px;
                     width: 100%;
                     -webkit-text-stroke-width: 2px;
 
                     @include desktop {
-                        font-size: 20px;
+                        font-size: $font-size-20;
                     }
 
                     @include tablet {
-                        font-size: 16px;
+                        font-size: $font-size-16;
                     }
 
                     @include mobile {
@@ -381,7 +380,7 @@
             }
 
             .features-main-header {
-                font-size: 30px;
+                font-size: $font-size-30;
                 padding-bottom: 20px;
                 -webkit-text-stroke-width: 1px;
                 line-height: 1.5;
@@ -389,7 +388,7 @@
 
             .features-main-content {
                 line-height: 1.5;
-                font-size: 20px;
+                font-size: $font-size-20;
                 padding-bottom: 20px;
             }
         }
@@ -423,7 +422,7 @@
                     }
 
                     .features-header {
-                        font-size: 20px;
+                        font-size: $font-size-20;
                         padding-bottom: 20px;
                     }
 
@@ -818,16 +817,16 @@
                 position: relative;
 
                 .description-number {
-                    font-size: 150px;
+                    font-size: 9.375rem;
                     opacity: 0.1;
                     font-weight: 900;
                     @include small-mobiles{
-                        font-size: 110px;
+                        font-size: 6.875rem;
                     }
                 }
 
                 .description-header {
-                    font-size: 50px;
+                    font-size: $font-size-50;
                     position: absolute;
                     z-index: 2;
                     top: 70px;
@@ -836,16 +835,16 @@
                     line-height: 1.5;
 
                     @include desktop {
-                        font-size: 40px;
+                        font-size: $font-size-40;
                     }
 
                     @include tablet {
                         width: 100%;
-                        font-size: 25px;
+                        font-size: $font-size-25;
                     }
 
                     @include small-mobiles{
-                        font-size: 20px;
+                        font-size: $font-size-20;
                         
                     }
                 }
@@ -853,14 +852,14 @@
             }
 
             .description-content {
-                font-size: 20px;
+                font-size: $font-size-20;
                 padding-bottom: 30px;
                 padding-top: 70px;
                 line-height: 1.5;
 
 
                 @include desktop {
-                    font-size: 16px;
+                    font-size: $font-size-16;
                     padding-top: 40px;
                 }
 
@@ -880,15 +879,15 @@
                 &:hover {
                     background-color: $btn-color;
                     transition: all 0.5s;
-                }
 
-                &:hover p {
-                    color: $text-color-2;
-                }
+                    p {
+                        color: $text-color-2;
+                    }
 
-                &:hover a {
-                    background-color: $text-color-2;
-                    color: $btn-color;
+                    a {
+                        background-color: $text-color-2;
+                        color: $btn-color;
+                    }
                 }
 
 
@@ -943,17 +942,17 @@
                 position: relative;
 
                 .description-number {
-                    font-size: 150px;
+                    font-size: 9.375rem;
                     opacity: 0.1;
                     font-weight: 900;
 
                     @include small-mobiles{
-                        font-size: 110px;
+                        font-size: 6.875rem;
                     }
                 }
 
                 .description-header {
-                    font-size: 50px;
+                    font-size: $font-size-50;
                     position: absolute;
                     top: 75px;
                     -webkit-text-stroke-width: 2px;
@@ -961,11 +960,11 @@
 
 
                     @include desktop {
-                        font-size: 40px;
+                        font-size: $font-size-40;
                     }
 
                     @include tablet {
-                        font-size: 25px;
+                        font-size: $font-size-25;
                     }
 
                     @include mobile {
@@ -975,7 +974,7 @@
 
                     @include small-mobiles {
                         left: 25px;
-                        font-size: 20px;
+                        font-size: $font-size-20;
                         top: 60px;
                     }
                 }
@@ -986,10 +985,10 @@
                 padding-bottom: 30px;
                 padding-top: 60px;
                 line-height: 1.5;
-                font-size: 20px;
+                font-size: $font-size-20;
 
                 @include desktop {
-                    font-size: 16px;
+                    font-size: $font-size-16;
                     padding-top: 35px;
                 }
 
@@ -1008,16 +1007,16 @@
                 &:hover {
                     background-color: $btn-color;
                     transition: all 0.5s;
-                }
 
-                &:hover p {
-                    color: $text-color-2;
-                }
+                    p {
+                        color: $text-color-2;
+                    }
 
-                &:hover a {
-                    background-color: $text-color-2;
-                    color: $btn-color;
-                }
+                    a {
+                        background-color: $text-color-2;
+                        color: $btn-color;
+                    }
+                }   
 
                 p {
                     display: inline-block;
@@ -1104,14 +1103,14 @@
 
     .slider-header {
         text-align: center;
-        font-size: 45px;
+        font-size: $font-size-45;
         width: 50%;
         margin: 0 auto;
         text-transform: capitalize;
         -webkit-text-stroke-width: 2px;
 
         @include tablet {
-            font-size: 30px;
+            font-size: $font-size-30;
         }
 
         @include mobile {
@@ -1148,7 +1147,7 @@
                 }
 
                 .slider-head {
-                    font-size: 20px;
+                    font-size: $font-size-20;
                     padding-bottom: 20px;
                 }
 
@@ -1215,7 +1214,7 @@
             }
 
             .registration-header {
-                font-size: 45px;
+                font-size: $font-size-45;
                 width: 50%;
                 padding-bottom: 20px;
 
@@ -1226,12 +1225,12 @@
 
                 @include tablet {
                     width: 100%;
-                    font-size: 25px;
+                    font-size: $font-size-25;
                 }
             }
 
             .registration-content {
-                font-size: 20px;
+                font-size: $font-size-20;
                 padding-bottom: 20px;
                 line-height: 1.7;
 
@@ -1240,7 +1239,7 @@
                 }
 
                 @include tablet {
-                    font-size: 16px;
+                    font-size: $font-size-16;
                 }
             }
 
@@ -1254,15 +1253,16 @@
                 &:hover {
                     background-color: $btn-color;
                     transition: all 0.5s;
-                }
 
-                &:hover a {
-                    color: $text-color-2;
-                }
+                    a {
+                        color: $text-color-2;
+                    }
 
-                &:hover i {
-                    color: $btn-color;
-                    background-color: $text-color-2;
+                    i {
+                        color: $btn-color;
+                        background-color: $text-color-2;
+                    }
+    
                 }
 
                 @include desktop{
@@ -1291,7 +1291,7 @@
                 padding-top: 50px;
 
                 .image-box-1 {
-                    background: url(../image/pexels-zen-chung-5748627.jpg);
+                    background: url("../image/pexels-zen-chung-5748627.jpg");
                     background-size: cover;
                     width: 50%;
                     height: 300px;
@@ -1316,10 +1316,10 @@
                         text-align: center;
                         position: relative;
                         padding-top: 100px;
-                        font-size: 30px;
+                        font-size: $font-size-30;
                         @include tablet{
                             padding-top: 0;
-                            font-size: 20px;
+                            font-size: $font-size-20;
                         }
                     }
 
@@ -1339,7 +1339,7 @@
                 }
 
                 .image-box-2 {
-                    background: url(../image/pexels-rfstudio-3810793.jpg);
+                    background: url("../image/pexels-rfstudio-3810793.jpg");
                     background-size: cover;
                     background-position: center;
                     width: 50%;
@@ -1365,13 +1365,13 @@
                         text-align: center;
                         position: relative;
                         padding-top: 120px;
-                        font-size: 30px;
+                        font-size: $font-size-30;
                         @include desktop{
                             padding-top: 100px;
                         }
                         @include tablet{
                             padding-top: 0;
-                            font-size: 20px;
+                            font-size: $font-size-20;
                         }
                     }
 
@@ -1392,7 +1392,7 @@
                 }
 
                 .image-box-3 {
-                    background: url(../image/pexels-olia-danilevich-5313158.jpg);
+                    background: url("../image/pexels-olia-danilevich-5313158.jpg");
                     background-size: cover;
                     background-position: center;
                     width: 50%;
@@ -1420,11 +1420,11 @@
                         padding-top: 60px;
                         position: relative;
                         text-align: center;
-                        font-size: 30px;
+                        font-size: $font-size-30;
                         color: $text-color-2;
 
                         @include tablet{
-                            font-size: 20px;
+                            font-size: $font-size-20;
                         }
                     }
 
@@ -1476,7 +1476,7 @@
 
         .footer-header {
             text-align: center;
-            font-size: 40px;
+            font-size: $font-size-40;
             padding-bottom: 20px;
             font-weight: 900;
         }
@@ -1550,7 +1550,7 @@
             @include mobile {
                 width: 100%;
                 padding-bottom: 20px;
-                font-size: 20px;
+                font-size: $font-size-20;
             }
 
             ul {
@@ -1585,7 +1585,7 @@
 
             @include mobile {
                 width: 100%;
-                font-size: 20px;
+                font-size: $font-size-20;
                 text-align: center;
             }
         }
