@@ -72,54 +72,81 @@ $(document).ready(function(){
       });
 })
 
+
+
 $(document).ready(function(){
-  $(".description-img-1").waypoint(function(){
-    $(".description-img-1").addClass("left-slide")
-  }, {offset:"30%"})
+  $(".banner-scroll-link").waypoint(function(direction){
+    $(".banner-scroll-link").addClass('animate__animated')
+  },{
+    offset:'50%'
+  })
 })
 
 $(document).ready(function(){
-  $(".description-overlay-img").waypoint(function(){
-    $(".description-overlay-img").addClass("down-slide")
-  }, {offset:"100%"})
+  $(".description-img-1").waypoint(function(direction){
+    $(".description-img-1").addClass('animate__animated animate__fadeInLeft')
+  },{
+    offset: '50%'
+  })
 })
 
 $(document).ready(function(){
-  $(".description-img-2").waypoint(function(){
-    $(".description-img-2").addClass("right-slide")
-  }, {offset:"30%"})
+  $(".description-overlay-img").waypoint(function(direction){
+    $(".description-overlay-img").addClass('animate__animated animate__fadeInDown')
+  },{
+    offset: '50%'
+  })
 })
 
 $(document).ready(function(){
-  $(".description-overlay-img-2").waypoint(function(){
-    $(".description-overlay-img-2").addClass("left-slide")
-  }, {offset:"100%"})
+  $(".description-img-2").waypoint(function(direction){
+    $(".description-img-2").addClass('animate__animated animate__fadeInRight')
+  },{
+    offset: '50%'
+  })
 })
 
 $(document).ready(function(){
-  $(".description-overlay").waypoint(function(){
-    $(".description-overlay").addClass("down-slide")
-  }, {offset:"100%"})
+  $(".description-overlay-img-2").waypoint(function(direction){
+       $(".description-overlay-img-2").addClass('animate__animated animate__fadeInDown')
+  },{
+    offset:'50%'
+  })
 })
 
 $(document).ready(function(){
-  $(".image-box-1").waypoint(function(){
-    $(".image-box-1").addClass("left-slide")
-  }, {offset:"50%"})
+  $(".description-overlay").waypoint(function(direction){
+       $(".description-overlay").addClass('animate__animated animate__fadeInRight')
+  },{
+    offset:'50%'
+  })
 })
 
 $(document).ready(function(){
-  $(".image-box-2").waypoint(function(){
-    $(".image-box-2").addClass("right-slide")
-  }, {offset:"50%"})
+  $(".image-box-1").waypoint(function(direction){
+       $(".image-box-1").addClass('animate__animated animate__fadeInLeft')
+  },{
+    offset:'50%'
+  })
 })
 $(document).ready(function(){
-  $(".image-box-3").waypoint(function(){
-    $(".image-box-3").addClass("up-slide")
-  }, {offset:"70%"})
+  $(".image-box-2").waypoint(function(direction){
+       $(".image-box-2").addClass('animate__animated animate__fadeInRight')
+  },{
+    offset:'50%'
+  })
 })
 $(document).ready(function(){
-  $(".image-box-4").waypoint(function(){
-    $(".image-box-4").addClass("down-slide")
-  }, {offset:"70%"})
+  $(".image-box-3").waypoint(function(direction){
+       $(".image-box-3").addClass('animate__animated animate__fadeInUp')
+  },{
+    offset:'50%'
+  })
+})
+$(document).ready(function(){
+  $(".image-box-4").waypoint(function(direction){
+       $(".image-box-4").addClass('animate__animated animate__fadeInDown')
+  },{
+    offset:'50%'
+  })
 })
