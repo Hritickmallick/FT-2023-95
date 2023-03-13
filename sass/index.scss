@@ -174,7 +174,6 @@
 
                 .banner-scroll-link {
                     margin-top: 35px;
-                    display: inline-block;
                     opacity: 0;
                     transition: 5s ease-out;
 
@@ -189,11 +188,12 @@
                 }
 
                 .animate__animated {
-                    animation:fadeInTopLeft;
-                    animation-duration: 3s;
+                    animation:fadeInLeftBig;
+                    animation-duration: 7s;
                     animation-timing-function: ease-in-out;
                     animation-iteration-count: infinite;
                     opacity: 1.0;
+                    
                 }
             }
 
@@ -327,8 +327,8 @@
 
 .section-client {
     background-color: $bckgrnd-color;
-    padding-top: 40px;
-    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 90px;
 
     @include small-mobiles {
         padding: 40px 0px
@@ -344,6 +344,15 @@
         .client-col-row {
             width: 20%;
             text-align: center;
+            transition: all 0.5s;
+            padding: 20px 0px;
+
+            &:hover {
+                box-shadow: 7px 10px 14px 7px #d1c6d1;
+                background-color: $text-color-2 ;
+                transition: all 0.5s;
+                border-radius: 15px;
+            }
 
             @include small-mobiles {
                 width: 50%;
@@ -351,14 +360,7 @@
             }
 
             img {
-                max-width: 60%;
-                transition: all 0.5s;
-
-                &:hover {
-                    box-shadow: 7px 10px 14px 7px #d1c6d1;
-                    max-width: 50%;
-                    transition: all 0.5s;
-                }
+                max-width: 50%;
             }
         }
     }

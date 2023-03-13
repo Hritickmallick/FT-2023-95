@@ -193,7 +193,6 @@ a {
 }
 .section-header-banner .banner .banner-box .banner-box-col-1 .banner-scroll-link {
   margin-top: 35px;
-  display: inline-block;
   opacity: 0;
   transition: 5s ease-out;
 }
@@ -205,8 +204,8 @@ a {
   color: #fff;
 }
 .section-header-banner .banner .banner-box .banner-box-col-1 .animate__animated {
-  animation: fadeInTopLeft;
-  animation-duration: 3s;
+  animation: fadeInLeftBig;
+  animation-duration: 7s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   opacity: 1;
@@ -339,8 +338,8 @@ a {
 
 .section-client {
   background-color: rgba(232, 229, 229, 0.5098039216);
-  padding-top: 40px;
-  padding-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 90px;
 }
 @media screen and (max-width: 567px) {
   .section-client {
@@ -360,6 +359,14 @@ a {
 .section-client .client-col .client-col-row {
   width: 20%;
   text-align: center;
+  transition: all 0.5s;
+  padding: 20px 0px;
+}
+.section-client .client-col .client-col-row:hover {
+  box-shadow: 7px 10px 14px 7px #d1c6d1;
+  background-color: #fff;
+  transition: all 0.5s;
+  border-radius: 15px;
 }
 @media screen and (max-width: 567px) {
   .section-client .client-col .client-col-row {
@@ -368,13 +375,7 @@ a {
   }
 }
 .section-client .client-col .client-col-row img {
-  max-width: 60%;
-  transition: all 0.5s;
-}
-.section-client .client-col .client-col-row img:hover {
-  box-shadow: 7px 10px 14px 7px #d1c6d1;
   max-width: 50%;
-  transition: all 0.5s;
 }
 
 .section-features {
