@@ -75,10 +75,10 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
-  $(".banner-scroll-link").waypoint(function(direction){
-    $(".banner-scroll-link").addClass('animate__animated')
+  $(".banner-scroll-link-a").waypoint(function(direction){
+    $(".banner-scroll-link-a").addClass('animation')
   },{
-    offset:'50%'
+    offset:'100%'
   })
 })
 

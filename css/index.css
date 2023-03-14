@@ -23,7 +23,48 @@ a {
   text-decoration: none;
 }
 
-/*@import 'animations';*/
+@keyframes scroll-link {
+  0% {
+    color: #fff;
+    transform: scale(1);
+  }
+  10% {
+    color: #ff5e00;
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(0);
+  }
+  30% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(0);
+  }
+  60% {
+    color: #fff;
+    transform: scale(1);
+  }
+  70% {
+    color: #fff;
+    transform: scale(1);
+  }
+  80% {
+    color: #fff;
+    transform: scale(1);
+  }
+  90% {
+    color: #fff;
+    transform: scale(1);
+  }
+  100% {
+    color: #fff;
+    transform: scale(1);
+  }
+}
 .section-header-banner {
   background-color: rgba(232, 229, 229, 0.5098039216);
   padding-bottom: 40px;
@@ -193,8 +234,6 @@ a {
 }
 .section-header-banner .banner .banner-box .banner-box-col-1 .banner-scroll-link {
   margin-top: 35px;
-  opacity: 0;
-  transition: 5s ease-out;
 }
 .section-header-banner .banner .banner-box .banner-box-col-1 .banner-scroll-link a {
   padding: 40px 10px;
@@ -203,12 +242,12 @@ a {
   display: inline-block;
   color: #fff;
 }
-.section-header-banner .banner .banner-box .banner-box-col-1 .animate__animated {
-  animation: fadeInLeftBig;
-  animation-duration: 7s;
-  animation-timing-function: ease-in-out;
+.section-header-banner .banner .banner-box .banner-box-col-1 .animation {
+  animation: scroll-link;
+  animation-duration: 8s;
   animation-iteration-count: infinite;
-  opacity: 1;
+  animation-timing-function: ease-in-out;
+  animation-delay: 4s;
 }
 .section-header-banner .banner .banner-box .banner-box-col-2 {
   width: 60%;
@@ -939,7 +978,7 @@ a {
   transition: 0.2s ease-in-out;
 }
 .section-description .description-box .description-box-row-2 .description-link:hover a i {
-  margin-left: 8px;
+  left: 18px;
   transition: 0.2s ease-in-out;
 }
 .section-description .description-box .description-box-row-2 .description-link p {
@@ -949,12 +988,16 @@ a {
 }
 .section-description .description-box .description-box-row-2 .description-link a {
   background-color: #ff5e00;
-  padding: 8px 12px;
+  padding: 8px 20px;
   color: #fff;
   border-radius: 5px;
   transition: 0.2s ease-in-out;
+  position: relative;
 }
 .section-description .description-box .description-box-row-2 .description-link a i {
+  position: absolute;
+  top: 10px;
+  left: 14px;
   transition: 0.2s ease-in-out;
 }
 .section-description .description-box-2 {
@@ -1070,7 +1113,7 @@ a {
   transition: 0.2s ease-in-out;
 }
 .section-description .description-box-2 .description-box-row-3 .description-link:hover i {
-  margin-left: 8px;
+  left: 18px;
   transition: 0.2s ease-out;
 }
 .section-description .description-box-2 .description-box-row-3 .description-link p {
@@ -1080,12 +1123,16 @@ a {
 }
 .section-description .description-box-2 .description-box-row-3 .description-link a {
   background-color: #ff5e00;
-  padding: 8px 12px;
+  padding: 8px 20px;
   color: #fff;
   border-radius: 5px;
+  position: relative;
 }
 .section-description .description-box-2 .description-box-row-3 .description-link a i {
   transition: 0.2s ease-in;
+  position: absolute;
+  top: 10px;
+  left: 14px;
 }
 .section-description .description-box-2 .description-box-row-4 {
   width: 60%;
@@ -1307,7 +1354,7 @@ a {
 }
 .section-registration .registration-box .registration-box-row .registration-link:hover .arrow-icon i {
   color: #ff5e00;
-  margin-left: 8px;
+  left: 18px;
   transition: 0.2s ease-in-out;
 }
 @media screen and (max-width: 1200px) {
@@ -1320,11 +1367,15 @@ a {
   padding-right: 25px;
 }
 .section-registration .registration-box .registration-box-row .registration-link .arrow-icon {
-  padding: 8px 12px;
+  padding: 8px 20px;
   background-color: #ff5e00;
   border-radius: 5px;
+  position: relative;
 }
 .section-registration .registration-box .registration-box-row .registration-link .arrow-icon i {
+  position: absolute;
+  top: 10px;
+  left: 14px;
   color: #fff;
   transition: 0.2s ease-in-out;
 }
